@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bubble.css">
+    <script src="Lib/js/d3.js"></script>
+    <script src="Lib/js/d3-color.js"></script>
+    <script src="Lib/js/d3.tip.js"></script>
+    <script src="Lib/js/lodash.js"></script>
+    <script src="static/js/bubble.js"></script>
+    <title>Australian Open</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-5">Performance of the countries in Australian open.</h1>
+            <p class='lead'>The following viusalization is based on a dataset called australianopen.csv which contains statistics from 10 years of Australian open professional men's tennis matches</p>
+        </div>
+        
+    </div>
+    <div class='row'>
+        <div id='bubble'>
+        </div>
+        <div id='drill'>
+        </div>
+    </div>
+    <div id='pie'></div>
+    <div class='row'>
+        <div class="card card-style">
+            <div class="card-body">
+                <ul>
+                    <li>
+                        <p class="card-text">Figure - 1 shows the number of wins for different countries according to the bubble size and sequential hue.</p>
+                    </li>
+                    <li>
+                        <p class="card-text">The text on the bubble is represented by <small class="text-muted">country</small> field of the dataset.</p>
+                    </li>
+                    <li>
+                        <p class="card-text">I have used color saturation and size encoding in this visualization. As can be seen, the country with highest wins are the largest and are dark green. On the other hand, countries with low number of wins are small and light green. </p>
+                    </li>
+                    <li>
+                        <p class="card-text">Spain and France appears to have won most of the matches in the Autralian open.</p>
+                    </li>
+                    <li>
+                        <p class="card-text">I have extensively used filtering in this visualization. Also, I have used the Shneiderman's mantra here: <strong>Overview first, zoom and filter, then details-on-demand.</strong></p>
+                    </li>
+                    <li>
+                        <p class="card-text">I have also included tooltip functionality in this visualization, which can be observed by hovering over any of the bubbles. For instance, if you hover over the circle with 'USA' as title, you will see a tooltip with United States.</p>
+                    </li>
+                    <li>
+                        <p class="card-text">Clicking on any of the country plots a new bar chart, which further shows the top performing players of that country.</p>
+                    </li>
+                    <li>
+                        <p class="card-text">If you click on the circle representing Germany (with 'GER' as title), you will find top 7 players of country with <strong>Philipp Kohlschreiber</strong> occupying the first position and <strong>Benjamin Becker</strong> occupying the last.</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="card card-style2" id="figure2">
+            <div class="card-body">
+                <ul>
+                    <li>
+                        <p class="card-text">If you further click on the bar chart representing <strong>Philipp Kohlschreiber</strong>, a new pie chart (Figure - 3) is displayed with total number of wins and losses for him.</p>
+                    </li>
+                    <li>
+                        <p class="card-text">Hovering over the bar chart (in Figure - 2) displays the number of wins of the corresponding player.</p>
+                    </li>
+                    <li>
+                        <p class="card-text">Figure -2: X-axis is represents the player names and Y-axis represents the number of times a player has won.</p>
+                    </li>
+                    <li>
+                        <p class="card-text">I deserve extra credits due to following reasons: </p>
+                        <ul>
+                            <li>
+                                <p class="card-text">I have used a third visualization technique i.e. <strong>pie chart</strong>.</p>
+                            </li>
+                            <li>
+                                <p class="card-text">I have not violated the color and size principle. A higher quantity is displayed in dark hue and a lower one in light. Moreover, I have not flooded my visualization by colors.</p>
+                            </li>
+                            <li>
+                                <p class="card-text">I have highlighted all the clickable items either by changing the opacity of the bubbles in the bubble chart or by changing the color on hover in the bar chart.</p>
+                            </li>
+                            <li>
+                                <p class="card-text">I have tried to keep the interaction as simple as possible.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
