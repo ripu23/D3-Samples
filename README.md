@@ -13,3 +13,6 @@ To get a server you can do either of the following:
 1. Install the [chrome extension](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en)
 2. Choose the cloned folder on the extension.
 3. Go to the url provided by the extension and you are good to go.
+
+## Other ways
+Creating a server using Node.js or using apache server are other good options.
