@@ -1,5 +1,5 @@
-# D3-samples
-The repository contains my visualisation samples as part of the course Data Visualisation.
+# D3-sample
+The repository contains my visualisation sample as part of the course Data Visualisation. On successfully running the files, you will be able to see bubble charts which are completely interactive. Clicking on any bubble will display a bar chart. Further clicking on bar chart will display a pie chart.
 
 The sample reads a csv file from javascript file and hence it won't be possible to run it without a server.
 To get a server you can do either of the following:
